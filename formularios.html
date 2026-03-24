@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="form_style.css">
+</head>
+<body>
+    <main>
+         <section >
+<div class="out_box">
+                <h2>Formulario de Reserva</h2>
+        <div id="CONTACTO" class="formulario_1">
+            <h2>Contacta con nosotros</h2>
+             <form id="contacto" name="contacto" method="get" action="mailto:tuemail@dominio.es">
+                <div>
+                    <label>Nombre:</label>
+                    <input name="nombre" type="text" maxlength="60" required placeholder="Nombre y Apellidos"><br><br>
+                </div>
+                <div>
+                    <label>Email:</label>
+                    <input name="email" type="email" required placeholder="abc123@dominio.ex"><br><br>
+                </div>
+                <div>
+                    <label>Telefono:</label>
+                    <input name="telefono" type="tel" required placeholder="Ej: 612345678"><br><br>
+                </div>
+                <div>
+                    <label>Personas:</label>
+                    <input name="personas" type="number" min="2" max="20" value="4" required><br><br>
+               </div>
+               <div style="display: flex; align-items: center; gap: 10px;">
+                    <label>Fecha:</label>
+                    <input name="fecha" type="date" required> <input type="time" required value="20:00" >
+                </div>
+                <br>
+                <div>
+                    <label>Mensaje:</label>
+                    <textarea rows="5" cols="50" maxlength="300" placeholder="Escribenos cualquier informacion adicional."></textarea><br>
+                </div>
+                <br><br>
+                <input type="submit" value="Enviar" class="button"><br><br>
+                <label class="checkbox">
+                    <input type="checkbox" name="privacidad" required>* Política de Privacidad
+                </label>
+            </div>
+            <script>
+                const hoy = new Date().toISOString().split('T')[0];
+                document.getElementById('fecha').setAttribute('min', hoy);
+            </script>
+        </div>
+
+
+<!----------><br><br>
+            <div class="out_box">
+                <h2>Formulario de Reserva</h2>
+        <div id="CONTACTO" class="formulario">
+            <h2>Contacta con nosotros</h2>
+             <form id="contacto" name="contacto" method="get" action="mailto:tuemail@dominio.es">
+                <label>Nombre:</label>
+                    <input name="nombre" type="text" maxlength="60" required placeholder="Nombre y Apellidos"><br><br>
+                <label>Email:</label>
+                    <input name="email" type="email" required placeholder="abc123@dominio.ex"><br><br>
+                <label>Telefono:</label>
+                    <input name="telefono" type="tel" required placeholder="Ej: 612345678"><br><br>
+                <label>Personas:</label>
+                    <input name="personas" type="number" min="2" max="20" value="4" required><br><br>
+                <label>Fecha:</label>
+                    <input name="fecha" type="date" required> <input type="time" required value="20:00" range="20:00-23:30"> <br><br>
+                <label>Ubicación</label><br>
+                <label class="checkbox">
+                    <input name="ubicacion" type="radio" value="terraza">Terraza<br>
+                    <input name="ubicacion" type="radio" value="salon" checked>Salón<br>
+                    <input name="ubicacion" type="radio" value="barra" >Barra<br>
+                </label>
+                <br>
+                <label for="alergias">Alergias:</label>
+                    <select name="alergias" ><br>
+                        <option value="si">Si</option>
+                        <option value="no">No</option>
+                        <!--<option value="ninguna" selected>Ninguna</option>
+                        <option value="gluten">Gluten</option>
+                        <option value="lacteos">Lacteos</option>
+                        <option value="huevos">Huevos</option>
+                        <option value="frutos">Frutos Secos</option>
+                        <option value="soja">Soja</option>
+                        <option value="pescado">Pescado</option><br> -->
+                    </select><br>
+                    <label class="checkbox">
+                    <input type="checkbox" name="alergias" value="gluten">Gluten<br>
+                    <input type="checkbox" name="alergias" value="lacteos">Lacteos<br>
+                    <input type="checkbox" name="alergias" value="huevos">Huevos<br>
+                    <input type="checkbox" name="alergias" value="frutos secos">Frutos Secos<br>
+                    <input type="checkbox" name="alergias" value="soja">Soja<br>
+                    <input type="checkbox" name="alergias" value="pescado">Pescado<br>
+                    </label>
+                    <br><br>
+                
+                <input type="submit" value="Enviar" class="button"><br><br>
+        </div>
+    </section>      
+    </main>
+</body>
+</html><textarea rows="5" cols="50" maxlength="300" placeholder="Escribenos cualquier informacion adicional."></textarea><br>

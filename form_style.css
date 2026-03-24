@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+.formulario{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    background-color: rgb(66, 160, 135);
+    margin-left: 450px;
+    margin-right: 450px;
+    border-radius: 30px;
+    color: rgb(6, 6, 6);
+    padding: 20px;
+}
+.formulario_1{
+    background: #ffffff;
+    color: rgb(66, 160, 135);
+    width: 100%;
+    max-width: 500px;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    margin-left: 450px;
+    margin-right: 450px;
+}
+.formulario_1 h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: rgb(66, 160, 135);
+}
+.button{
+        background-color: rgb(111, 180, 162);
+        color: rgb(44, 72, 64);
+        border-radius: 30px 30px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.2s ease;
+    }
+.out_box{
+    background-color: rgba(111, 180, 162,0.8);
+    border-radius: 30px;
+    color: rgb(6, 6, 6);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    padding-top: 50px;
+    color: white;
+}
+/* con estos tres comandos cambiamos el estilo de las cajas para escribir los datos */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d0d7de;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+input:invalid,
+textarea:invalid {
+  border-color: #dc2626;
+}
+/*Fin de nota con estos comandos cambiamos el estilo.... */
+
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.checkbox input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
